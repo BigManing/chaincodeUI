@@ -42,8 +42,7 @@ func (c *ChaincodeController) Get() {
 	// 2 读取、写入其版本号
 
 	operation := c.GetString("operation")
-	chaincodeName := c.GetString("ccName")
-	chaincodeName = "IncrementChaincode"
+	// chaincodeName = "IncrementChaincode"
 
 	var cmd *exec.Cmd
 	switch operation {
